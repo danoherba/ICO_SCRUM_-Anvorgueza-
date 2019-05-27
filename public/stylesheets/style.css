@@ -1,7 +1,8 @@
 body {
+  background:(../images/daniel.jpg);
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background:(../images/daniel.jpg);
+
 }
 
 a {
