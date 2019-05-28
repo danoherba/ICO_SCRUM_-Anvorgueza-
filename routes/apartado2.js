@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/renep', function(req, res, next) {
-  res.render('rene', { title: 'Expresss' });
+  res.render('rene', { title: 'Express' });
 });
 
 module.exports = router;
