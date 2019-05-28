@@ -2,25 +2,36 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
         <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);});
+    </script>
   </head>
-  <body>
-    <nav>
+  <body class="blue lighten-2">
+    <nav class="blue darken-4">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/">Teoría Básica de Sistemas de Información</a></li>
-          <li><a href="/">Sistemas de Informacion</a></li>
-          <li><a href="/">Scrum</a></li>
-          <li><a href="/informacion">Acerca de</a></li>
+        <a href="/" class="brand-logo"><i class="large material-icons">all_inclusive</i>Sistemas de Informacion</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/teoria">Teoría Básica de Sistemas de Información</a></li>
+          <li><a href="/sistemas">Sistemas de Informacion</a></li>
+          <li><a href="/scrum">Scrum</a></li>
+          <li><a href="/informacion">Desarroladores</a></li>
         </ul>
       </div>
     </nav>
+
     {{{body}}}
   </body>
 </html>
