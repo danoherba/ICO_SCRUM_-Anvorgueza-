@@ -6,8 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('sistemas', { title: 'Express' });
 });
 
-router.get('/renep', function(req, res, next) {
-  res.render('rene', { title: 'Express' });
+router.get('/tpss', function(req, res, next) {
+  res.render('tps', { title: 'Express' });
 });
 
+router.get('/crmm', function(req, res, next) {
+  res.render('crm', { title: 'Express' });
+});
+
+router.get('/miss', function(req, res, next) {
+  res.render('mis', { title: 'Express' });
+});
 module.exports = router;
